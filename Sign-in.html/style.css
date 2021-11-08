@@ -433,3 +433,20 @@ form .dash {
   /* animation: 1s ease-in -2s infinite both running alternate example1; */
   background-size: 100%;
 }
+
+@media screen and (max-width: 935px){
+  .navbar .c-icon {
+    display: none;
+  }
+  .navbox_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .search-bar {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+  }
+}

@@ -6,13 +6,7 @@
 
 .navbar {
   height: 70px;
-  /* background-color: rgb(235, 33, 100); */
-  /* background-image: linear-gradient(-45deg, black, white); */
-   /* background-color:rgb(128, 65, 65); */
    background-color: black;
-  /* background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,indigo,blue,green,orange,red); */
-  /* animation: 17s ease-in -2s infinite both running reverse example1; */
-  /* background-size: 200%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +27,35 @@
   width: 65px;
   margin:0 15px;
 }
+.navbox_2{
+  display: flex;
+  width: 80%;
+  padding: 0 15px;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.navicons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+}
+
+
+.navicons a{
+  color: black;
+  margin: 0 0.5rem;
+}
+
+.navicons a:last-child{
+    margin-right: 1.5rem;
+    font-size: 2.2rem;
+}
+
+
+
 
 .container {
   display: flex;
@@ -420,7 +443,7 @@ form .dash {
 
 form .inputGroup2 .passinput {
   display: block;
-  padding: 0 2em 0;
+  padding: 0 1em 0;
   background-color: white;
   border: 2px solid  lightgray;
   border-radius: 4px;
@@ -444,35 +467,6 @@ form .reme a{
   /* color: #217093; */
   margin : 0 auto 1vh auto;
 
-}
-
-.navbox_2{
-  display: flex;
-  width: 80%;
-  /* border: 0.2rem solid red; */
-  padding: 0 15px;
-  justify-content: end;
-  gap: 1rem;
-}
-
-.navicons{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2.5rem;
-}
-
-
-.navicons a{
-  color: black;
-  margin: 0 0.5rem;
-}
-
-.navicons a:last-child{
-    margin-right: 1.5rem;
-    font-size: 2.2rem;
-    /* color :white; */
 }
 
 .multicolored{
@@ -514,3 +508,44 @@ form .reme a{
   width: 50%;
   height: 100%;
 } */
+
+@media screen and (max-width: 935px){
+  .navbar .c-icon {
+    display: none;
+  }
+  .navbox_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .search-bar {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  form .inputGroup2 .passinput{
+    width: 80%;
+  }
+  form input[type="text"]{
+    width: 80%;
+  }
+  form .inputGroup1 .helper1 {
+    left: 10%;
+  }
+  .belowinputs {
+    width: 80%;
+  }
+  .toLoginPage{
+    width: 80%;
+  }
+  .orContainer{
+    width: 80%;
+  }
+  .signInWithGoogle{
+    width: 30%;
+  }
+}

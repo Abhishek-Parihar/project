@@ -441,7 +441,7 @@ function onEmailInput(e) {
 function myFunction() {
   var x = document.getElementById("password");
   var y = document.getElementById("cpassword");
-  if (x.type == "password") {
+  if (x.type === "password") {
     x.type = "text";
     y.type = "text";
     showPassword = true;
